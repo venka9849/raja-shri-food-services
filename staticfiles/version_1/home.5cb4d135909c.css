@@ -1,0 +1,349 @@
+body {
+    background-color: #fff8f0;
+}
+h1 {
+    color: #8B1E2D;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tagline {
+    text-align: center;
+    color: #8B1E2D;
+    font-size: 20px;
+}
+.navbar{
+    background-color: #8B1E2D;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 18px 24px;
+
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar a:hover{
+    color: #d4af37;
+}
+.brand{
+    font-size: 22px;
+    font-weight: bold;
+    color: #d4af37;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 20px;
+}
+.hero-content{
+    flex: 1.2;
+    align-self: center;
+}
+.hero-image{
+    flex: 1;
+}
+.hero-image img {
+    width: 100%;
+    border-radius: 12px;
+    height: 350px;
+    object-fit: cover;
+}
+.hero-content h1 {
+    text-align: left;
+}
+.hero-content .tagline {
+    text-align: left;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+}
+.feature {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+.feature h3 {
+    color: #8B1E2D;
+    text-align: center;
+}
+
+.menu-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.menu-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+.menu-section h2{
+    width: 100%;
+    text-align: center;
+}
+.menu-section h3{
+    color: #8b1e2d;
+}
+.menu-price {
+    color: #8B1E2D;
+    font-weight: bold;
+}
+.menu-disc{
+    color: #555555;
+}
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.menu-card {
+    transition: transform 0.3s ease;
+}
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+#hours {
+    background-color: white;
+    padding: 30px;
+    margin: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+#hours h2 {
+    color: #8B1E2D;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    background-color: white;
+    padding: 40px;
+    margin: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+.about-section h2 {
+    color: #8B1E2D;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about-section p {
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 0 auto 15px;
+}
+
+.services-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.services-section h2 {
+    color: #8B1E2D;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-section {
+    background-color: white;
+    padding: 40px 20px;
+    margin: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+.contact-section h2 {
+    color: #8B1E2D;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact-section p {
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+.contact-btn {
+    background-color: #8B1E2D;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reviews-section {
+    background-color: white;
+    padding: 40px 20px;
+    margin: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+.reviews-section h2 {
+    color: #8B1E2D;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.reviews-section p {
+    color: #555555;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.reviews-btn {
+    display: inline-block;
+    background-color: #8B1E2D;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Mobile Responsive Navbar */
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .navbar .brand {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+
+/* Mobile Responsive Hero Section */
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Responsive Feature Cards */
+@media (max-width: 600px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .features > * {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
+    }
+}
+
+/* Mobile Responsive Menu Cards */
+@media (max-width: 600px) {
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu-items > * {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+}
+
+/* Mobile Responsive Contact Buttons */
+@media (max-width: 600px) {
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-btn {
+        width: 200px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
+/* Center menu cards on mobile */
+@media (max-width: 600px) {
+    .menu-items {
+        align-items: center;
+    }
+}
+
+/* Menu Images - Mobile Responsive */
+@media (max-width: 600px) {
+    .menu-card img {
+        width: 100%;
+        max-width: 280px;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 15px;
+        border-radius: 8px;
+    }
+}
